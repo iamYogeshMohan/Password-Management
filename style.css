@@ -1,0 +1,160 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(102,126,234,0.8), rgba(118,75,162,0.8)),
+              url('https://uploads.onecompiler.io/42wpuvs8q/43xuwthp8/1000126897.png') no-repeat center center;
+  background-size: contain;
+  background-blend-mode: overlay;
+}
+
+/* App Name Section */
+#appName {
+  width: 100%;
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  padding: 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Your Passwords section */
+#passwordHeader {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#count {
+  font-weight: normal;
+  opacity: 0.8;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 10px 15px;
+  width: 90%;
+  max-width: 400px;
+  margin: 10px 0 20px 0;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: black;
+  padding: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-bar .icon {
+  margin-right: 8px;
+  color: black;
+}
+
+/* Password List */
+#list {
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 0px;
+  padding: 10px;
+}
+
+.card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.card:hover { transform: translateY(-3px); }
+
+.btn-copy, .btn-del {
+  padding: 6px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-copy { background: #28c76f; color: white; }
+.btn-del { background: #ea5455; color: white; }
+
+/* Add Password Form */
+#formSection {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255,255,255,0.95);
+  color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  z-index: 100;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.btn-add {
+  background: #5b8def;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#fab, #enterBtn {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.2);
+  border: 2px solid white;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.2s;
+  z-index: 50;
+}
+
+#fab:hover, #enterBtn:hover { background: rgba(255,255,255,0.35); }
